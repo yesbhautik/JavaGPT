@@ -9,6 +9,10 @@ This project is a JavaFX-based chat application that integrates with OpenAI's GP
 - Database support for storing chat history.
 - Customizable UI with CSS.
 
+## Screenshot of Application
+
+![JavaGPT Chat Application Screenshot](./RepoInfo-resources/JavaGPT-screenshot.png)
+
 ## Prerequisites
 
 - Java 17 or higher.
