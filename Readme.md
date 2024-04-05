@@ -84,4 +84,4 @@ Contributions are welcome. Please open an issue first to discuss what you would 
 
 ## License
 
-This project is open-source and available under the MIT License.
+This project is open-source and available under the [MIT](https://github.com/yesbhautik/JavaGPT/blob/main/LICENSE) License.
