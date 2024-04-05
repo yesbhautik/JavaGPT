@@ -68,7 +68,7 @@ openai.api.key=YOUR_OPENAI_API
 
 ### Build and Run the Application
 
-Navigate to `root directory` of project and following command:
+Navigate to `root directory` of project and run following command:
 
 ```bash
 mvn javafx:run
