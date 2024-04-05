@@ -27,7 +27,7 @@ Start by cloning the repository to your local machine:
 
 ```bash
 git clone https://github.com/yesbhautik/JavaGPT.git
-cd javafx-chat-application
+cd JavaGPT
 ```
 
 ### Configure Database Connection
