@@ -94,8 +94,8 @@ public class ChatApp extends Application {
         root.setBottom(inputBox);
 
         Scene scene = new Scene(root, 800, 600);
-        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-        Image appIcon = new Image(getClass().getResourceAsStream("logo.png"));
+        scene.getStylesheets().add(getClass().getResource("/application.css").toExternalForm());
+        Image appIcon = new Image(getClass().getResourceAsStream("/logo.png"));
         stage.getIcons().add(appIcon);
         stage.setTitle("JavaGPT by YESBHAUTIK");
         stage.setScene(scene);
