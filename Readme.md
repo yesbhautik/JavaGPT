@@ -26,7 +26,7 @@ This project is a JavaFX-based chat application that integrates with OpenAI's GP
 Start by cloning the repository to your local machine:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/yesbhautik/JavaGPT.git
 cd javafx-chat-application
 ```
 
