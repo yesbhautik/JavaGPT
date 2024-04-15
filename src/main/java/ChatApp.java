@@ -45,18 +45,22 @@ public class ChatApp extends Application {
         input.setPromptText("Start talking with JavaGPT");
         input.setOnAction(e -> doSearch(input.getText()));
 
-        Button searchButton = new Button("Search");
+        Button searchButton = new Button("Ask");
         searchButton.setOnAction(e -> doSearch(input.getText()));
 
-        Button clearButton = new Button("Clear");
+        Button refreshButton = new Button("🔃"); // Add this line for the new Refresh button
+        refreshButton.setOnAction(e -> refreshChatHistory()); // Set the action to refresh chat history
+
+        Button clearButton = new Button("Clear Chat History");
         clearButton.setOnAction(e -> {
             data.clear(); // Clear the observable list
             clearChatHistoryFromDatabase(); // Add this line to clear history from the database
             lastAnswer.clear();
         });
+        HBox inputBox = new HBox(20, input, searchButton, clearButton, refreshButton); // Include refreshButton here
 
-        HBox inputBox = new HBox(20, input, searchButton, clearButton);
-        inputBox.setPadding(new Insets(10, 0, 20, 0));
+        // HBox inputBox = new HBox(20, input, searchButton, clearButton);
+        // inputBox.setPadding(new Insets(10, 0, 20, 0));
 
         TableColumn<SearchAction, Boolean> finishedColumn = new TableColumn<>("Finished");
         finishedColumn.setCellValueFactory(cellData -> cellData.getValue().getFinishedProperty());
@@ -148,5 +152,10 @@ public class ChatApp extends Application {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    private void refreshChatHistory() {
+        data.clear(); // Clear the current chat history from the UI
+        loadChatsFromDatabase(); // Reload chat history from the database
     }
 }
