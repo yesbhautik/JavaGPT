@@ -23,6 +23,9 @@ This project is a JavaFX-based chat application that integrates with OpenAI's GP
 
 ![JavaGPT Chat Application Workflow](./RepoInfo-resources/workflow-diagram-trp.svg)
 
+## Workflow Explanation
+Explanation of the workflow can be found in [workflow-depth.md](./RepoInfo-resources/workflow-depth.md).
+
 ## Setup Instructions
 
 ### Clone the Repository
