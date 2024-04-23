@@ -19,6 +19,10 @@ This project is a JavaFX-based chat application that integrates with OpenAI's GP
 - Maven for dependency management and project build.
 - MySQL database for storing chat history.
 
+## Workflow diagram
+
+![JavaGPT Chat Application Workflow](./RepoInfo-resources/workflow-diagram-trp.svg)
+
 ## Setup Instructions
 
 ### Clone the Repository
